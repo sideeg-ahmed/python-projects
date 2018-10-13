@@ -1,0 +1,19 @@
+def merge_the_tools(string, k):
+    # your code goes here
+    a = list(string)
+    x = len(a)/k
+    b = []
+    for i in range(0,len(a),k):
+        b.append(a[i:i+k])
+    c = ''
+    
+    for i in b:
+        if c:
+            print c
+            c = ''
+        for j in i:
+            if j not in c:
+                    
+                c+=j
+    print c
+    
