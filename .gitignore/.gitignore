@@ -1,0 +1,20 @@
+list = []
+list3 = []
+for i in range(int(raw_input())):
+    name = raw_input()
+    score = float(raw_input())
+    
+    list2 =[name,score]
+    list.append(list2)
+    if score not in list3:
+        list3.append(score)
+list3.sort()
+x = list3[1]
+list.sort()
+list4 = []
+for i in list:
+    if i[1] == x:
+        list4.append(i[0])
+list4.sort()
+for i in list4:
+    print i
